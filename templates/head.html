@@ -1,0 +1,53 @@
+{% load static%}
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--  반응형 웹 만들어주기  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- 모바일 크기에 맞춰주기-->
+    <link rel="short icon" href="#">
+    <title>TITLE</title>
+
+    <!--부트스트랩링크-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--  googlefont link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+
+    <!-- 구글 material icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!--디폴트 css링크-->
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+
+    <style>
+        @font-face{
+            font-family: 'NanumSquareNeoOTF-aLt';
+            src: local('NanumSquareNeoOTF-aLt'),
+            url('{% static 'fonts/NanumSquareNeoOTF-aLt.otf' %}') format('opentype');
+        }
+        @font-face{
+            font-family: 'NanumSquareNeoOTF-bRg';
+            src: local('NanumSquareNeoOTF-bRg'),
+            url('{% static 'fonts/NanumSquareNeoOTF-bRg.otf' %}') format('opentype');
+        }
+        @font-face{
+            font-family: 'NanumSquareNeoOTF-cBd';
+            src: local('NanumSquareNeoOTF-cBd'),
+            url('{% static 'fonts/NanumSquareNeoOTF-cBd.otf' %}') format('opentype');
+        }
+        @font-face{
+            font-family: 'NanumSquareNeoOTF-dEb';
+            src: local('NanumSquareNeoOTF-dEb'),
+            url('{% static 'fonts/NanumSquareNeoOTF-dEb.otf' %}') format('opentype');
+        }
+        @font-face{
+            font-family: 'NanumSquareNeoOTF-eHv';
+            src: local('NNanumSquareNeoOTF-eHv'),
+            url('{% static 'fonts/NanumSquareNeoOTF-eHv.otf' %}') format('opentype');
+        }
+    </style>
+</head>
