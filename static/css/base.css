@@ -1,10 +1,25 @@
 /*structure grid*/
+
+.Footergirdcontainer{
+    display: grid;
+    grid-template-columns: 8fr 7fr 30fr 7fr 8fr;
+    grid-template-rows: 2rem 4rem auto;
+    height:100vh;
+    max-height:500px;
+}
+
 .Contentgirdcontainer{
     display: grid;
-    grid-template-columns: auto 6% 1000px 6% auto;
+    grid-template-columns: 5fr 5fr 40fr 5fr 5fr;
     grid-template-rows:auto 6rem;
     margin:0;
-    min-height: 55vh
+    min-height: 63vh
+}
+
+.Headergirdcontainer{
+    display: grid;
+    grid-template-columns: 10fr 12fr 28fr 10fr;
+    grid-template-rows: 1rem 3rem 3rem 1rem;
 }
 
 .Contentbackground{
@@ -20,19 +35,7 @@
 .advertisementcontainer{
 }
 
-.Headergirdcontainer{
-    display: grid;
-    grid-template-columns: auto 300px 700px auto;
-    grid-template-rows: 1rem 3rem 3rem 1rem;
-}
 
-.Footergirdcontainer{
-    display: grid;
-    grid-template-columns: auto 40px 700px 40px auto;
-    grid-template-rows: 2rem 4rem auto;
-    height:100vh;
-    max-height:500px;
-}
 
 
 /* font */
@@ -110,3 +113,16 @@ hr {
   margin:0;
   padding:0;
 }
+
+html {
+  zoom: 90%;
+  font-size: 16px;
+}
+
+/* 미디어 쿼리로 픽셀에 따른 크기 조절 */
+@media screen and (max-width:1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
