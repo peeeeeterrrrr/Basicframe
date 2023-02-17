@@ -1,0 +1,112 @@
+/*structure grid*/
+.Contentgirdcontainer{
+    display: grid;
+    grid-template-columns: auto 6% 1000px 6% auto;
+    grid-template-rows:auto 6rem;
+    margin:0;
+    min-height: 55vh
+}
+
+.Contentbackground{
+    grid-column: 2/5;
+    grid-row: 1/3;
+}
+
+.Contentcontainer{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.advertisementcontainer{
+}
+
+.Headergirdcontainer{
+    display: grid;
+    grid-template-columns: auto 300px 700px auto;
+    grid-template-rows: 1rem 3rem 3rem 1rem;
+}
+
+.Footergirdcontainer{
+    display: grid;
+    grid-template-columns: auto 40px 700px 40px auto;
+    grid-template-rows: 2rem 4rem auto;
+    height:100vh;
+    max-height:500px;
+}
+
+
+/* font */
+.LogoFont{
+    font-family: 'Righteous', cursive;
+}
+
+.NavFont{
+    font-family: 'NanumSquareRoundOTFB';
+}
+
+.ContentFont{
+    font-family: 'NanumSquareRoundOTFR';
+}
+
+.NavFont_Bold{
+    font-family: 'NanumSquareRoundOTFEB';
+}
+
+.FooterFont{
+    font-family: 'NanumSquareRoundOTFL';
+}
+
+/* 다크모드 관리 */
+
+
+.black_background{
+    color: #F8F8F8;
+    background-color: #303030;
+}
+.black_background a {
+  text-decoration: none;
+  color: #F8F8F8;
+  transition: color 0.2s;
+}
+
+.white_background{
+    color:#303030;
+    background-color: #F8F8F8;
+}
+.white_background a {
+  text-decoration: none;
+  color: #303030;
+  transition: color 0.2s;
+}
+
+.gray_background{
+    color: #303030;
+    background-color:#F0F0F0;
+}
+.gray_background a {
+  text-decoration: none;
+  color: #303030;
+  transition: color 0.2s;
+}
+
+/* base containers */
+
+
+a:hover {
+  color: #FFC0CB;
+  text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+hr {
+  height : 1px;
+  background-color : black;
+  border : 0;
+  opacity:0.4;
+  margin:0;
+  padding:0;
+}

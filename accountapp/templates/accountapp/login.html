@@ -2,17 +2,15 @@
 {% load bootstrap4 %}
 {% block content %}
 
-  <div style="text-align: center; max-width: 500px; margin:2rem auto 3rem auto;">
-    <div style="margin:0 6% auto 6%">
-      <div class="mb-4">
-        <h4 style="font-family:'NanumSquareNeoOTF-dEb';"> Login </h4>
-      </div>
-      <form action="" method="post" >
-        {% csrf_token %}
-        {% bootstrap_form form %}
-        <input type="submit" class="btn  rounded-pill col-6 mt-3 Korean_font2" style=" background-color: #C0C0C0;
-            box-shadow: 0 0 4px black; color:black">
-      </form>
-    </div>
+<div class="BasicFormFullBox">
+  <div style=" margin-top:4rem; width: 400px; text-align: center" >
+    <h2 class="LogoFont"> Login </h2>
+    <form action="" method="post" class="NavFont" style="margin-top:1rem">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <input type="submit" class="btn  rounded-pill col-6 mt-3 " style=" background-color: #ccc;
+          box-shadow: 0 0 4px black; color:black">
+    </form>
   </div>
+</div>
 {% endblock %}

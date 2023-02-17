@@ -1,0 +1,48 @@
+.Footernavmenu{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: row
+    align-items: flex-start;
+}
+
+.FooterBanner{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    flex-direction: row
+    align-items: flex-start;
+}
+.FooterLogoItem{
+    margin-right:2rem;
+    position: relative;
+    bottom:10px;
+}
+
+.FooterLogo{
+    font-size: 2.2rem;
+    font-weight:900;
+}
+
+.FooterSubLogo{
+    display: inline-block;
+    padding: 0;
+    border-radius: 1px;
+    font-size: 0.7rem;
+    position: relative;
+    bottom:7px;
+}
+.FooterLogoDetail{
+    font-size: 0.75rem;
+    color: white;
+    font-weight:900;
+}
+
+.limenu {
+    color: white;
+    display: block;
+    margin-left:1.5rem
+}
+

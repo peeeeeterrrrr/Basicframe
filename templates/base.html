@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
 
+
 {% include 'head.html' %}
 
-<body class="Korean_font"  style="background-color: #303030; color: white;" >
-    {% include 'header.html' %}
+<body>
+    <div class="Headergirdcontainer white_background">
+        {% include 'header.html' %}
+    </div>
     <hr>
-    {% block content %}
-    {% endblock %}
+    <div class="advertisementcontainer">
+        {% include 'advertisementapp/advertisementbanner.html' %}
+    </div>
+    <div  class="gray_background Contentgirdcontainer" >
+        <div class="white_background Contentbackground">
+        </div>
+        <div class="white_background Contentcontainer">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
     <hr>
-    {% include 'footer.html' %}
+    <div class="Footergirdcontainer black_background">
+        {% include 'footer.html' %}
+    </div>
 </html>
 
