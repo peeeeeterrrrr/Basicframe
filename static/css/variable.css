@@ -1,8 +1,10 @@
 :root {
-  --dark_bg_color: #303030;
+  --dark_bg_color: #202020;
   --bright_bg_color: #F8F8F8;
   --middle_bg_color: #F0F0F0;
   --dark_text_color: #303030;
   --bright_text_color: #F8F8F8;
   --hover_text_color: #FFC0CB;
+  --brighttp_bg_color:rgba(248,248,248,0.95);
+  --darktp_bg_color: rgba(16,16,16,0.9);
 }

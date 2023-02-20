@@ -19,7 +19,7 @@
     zoom: 0.8;
     margin-right:2rem;
     position: relative;
-    bottom:25px;
+    bottom:1.3rem;
 }
 .FooterLogoItem_App{
     display:none;
@@ -63,10 +63,10 @@
         align-items: flex-start;
         zoom:0.8;
         position: relative;
-        bottom:25px;
+        bottom:1.3rem;
     }
     .FooterLogoDetail{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .FooterNavAStyle{
         margin-left:0;

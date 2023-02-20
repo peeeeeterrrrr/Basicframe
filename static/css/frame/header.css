@@ -11,13 +11,13 @@
     display:none;
 }
 
-.HeaderAccountItem {
+.accountmenu {
   grid-column: 3/4;
   grid-row: 2/3;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 
@@ -27,10 +27,11 @@
     grid-row: 3/4;
     font-size: 1.1rem;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: flex-end;
     position: relative;
-    top:6px;
+    top:0.3rem;
 }
 
 .headerhr{
@@ -41,66 +42,73 @@
     justify-content: flex-start;
 }
 
-/* 아이콘 관리*/
-.iconstyle{
-    color:var(--dark_text_color);
-    font-size: 1.8rem;
-    text-shadow: 0 0 2px #404040;
-
-}
-
-
 .burgermenu{
     display:none;
 }
 
-
-
-/* 메뉴바 관리*/
-
-.headerdivmenu {
-    margin-left:1.5rem
+/* 아이콘 관리*/
+.iconstyle{
+    color:var(--dark_text_color);
+    font-size: 1.8rem;
+    text-shadow: 0 0 2px #303030;
+}
+.NavIcon{
+    color:var(--dark_text_color);
+    font-size: 1.4rem;
+    text-shadow: 0 0 2px #303030;
+    margin-right:0.5rem;
 }
 
-.burgernavbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
+.AccountIcon{
+    color:var(--bright_text_color);
+    font-size: 2rem;
+    text-shadow: 0 0 2px #F8F8F8;
+    margin-right:0.5rem;
+}
+
+.Burger_Smallbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left:1.5rem;
+    font-size: 1.15rem;
+    align-items: center;
 }
 
 
-#menu-toggle-burger:checked ~ .burgernavbar {
-  opacity: 1;
-  visibility: visible;
-}
 
+
+/* account 메뉴 */
+
+.Account_Smallbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color:var(--dark_bg_color);
+    height:2rem;
+    width: 50%;
+    border-top: 0.5px solid gray;
+}
 
 .accountnavbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50px;
+  font-size: 1.3rem;
+  align-items: flex-end;
+  width: 50%;
   left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  right: 0;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.7s, visibility 0.7s;
 }
 
+.accountnavbar a{
+    color:var(--bright_text_color);
+}
 
 #menu-toggle-account:checked ~ .accountnavbar {
   opacity: 1;
@@ -117,14 +125,14 @@
         justify-content:center;
         align-items: flex-start;
         position: relative;
-        bottom:10px;
+        bottom:0.7rem;
     }
 
     .HeaderLogoItem_Web{
         display:none;
     }
 
-    .HeaderAccountItem{
+    .accountmenu{
         grid-column: 3/4;
         grid-row: 1/3;
         display: flex;
@@ -132,16 +140,6 @@
         align-items: center;
         justify-content: flex-start;
     }
-
-    .iconstyle{
-        color:var(--bright_text_color);
-        font-size: 3.3rem;
-        margin-left:1.5rem;
-        margin-right:1.5rem;
-        text-shadow: 0 0 6px #A0A0A0;
-    }
-
-
     .HeadernavmenuItem{
         display:none;
     }
@@ -160,5 +158,111 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
+    }
+
+
+    /* 아이콘 관리 */
+    .iconstyle{
+        color:var(--bright_text_color);
+        font-size: 3.2rem;
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+        text-shadow: 0 0 5px #A0A0A0;
+    }
+
+0    .NavIcon{
+        color:var(--bright_text_color);
+        font-size: 1.8rem;
+        text-shadow: 0 0 2px #A0AA0;
+        margin-right:0.5rem;
+    }
+
+    .AccountIcon{
+        color:var(--bright_text_color);
+        font-size: 1.8rem;
+        text-shadow: 0 0 2px #A0A0A0;
+        margin-right:0.5rem;
+    }
+
+
+
+    /* 스크롤 메뉴 작은 박스 관리 */
+
+
+    /* 스크롤메뉴- 버거 */
+
+    .Burger_Smallbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left:0;
+        font-size: 1.4rem;
+        align-items: center;
+        background-color:var(--darktp_bg_color);
+        height:5rem;
+        width: 100%;
+        border-top: 0.5px solid gray;
+    }
+
+    .burgernavbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 5.7rem;
+      width: 100%;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.7s, visibility 0.7s;
+    }
+
+    .burgernavbar a{
+        color:var(--bright_text_color);
+    }
+
+    #menu-toggle-burger:checked ~ .burgernavbar {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* account 메뉴 */
+    .Account_Smallbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left:0;
+        font-size: 1.4rem;
+        align-items: center;
+        background-color:var(--darktp_bg_color);
+        height:5rem;
+        width: 100%;
+        border-top: 0.5px solid gray;
+    }
+
+    .accountnavbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 5.7rem;
+      width: 100%;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.7s, visibility 0.7s;
+    }
+
+    .accountnavbar a{
+        color:var(--bright_text_color);
+    }
+
+    #menu-toggle-account:checked ~ .accountnavbar {
+      opacity: 1;
+      visibility: visible;
     }
 }

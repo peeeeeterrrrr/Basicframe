@@ -6,29 +6,48 @@
     {% include 'snippets/Logo_Bright.html' %}
 </div>
 
-
-<!-- 계정 관련 배너 -->
-<div class="HeaderAccountItem">
+<!-- 계정 메뉴 -->
+<div class="accountmenu">
     <input style="display:none;" type="checkbox" id="menu-toggle-account">
     <label for="menu-toggle-account" class="iconstyle material-icons">account_circle</label>
-    <div class="accountnavbar">
-        {% include 'accountnavmenu.html' %}
+    <div class="accountnavbar NavFont">
+        {% include 'menues/header_logined_account.html' %}
     </div>
 </div>
 
 <!-- 버거메뉴 -->
 <div class="burgermenu">
     <input style="display:none;" type="checkbox" id="menu-toggle-burger">
-    <label  for="menu-toggle-burger" class="iconstyle material-icons" >menu</label>
-    <div class="burgernavbar">
-    {% include 'headernavmenu.html' %}
+    <label for="menu-toggle-burger" class="iconstyle material-icons">menu</label>
+    <div class="burgernavbar NavFont">
+        {% include 'menues/header_logouted_nav.html' %}
     </div>
 </div>
 
+<!-- 자동으로 꺼지게 하기-->
+
+<script>
+  const accountMenu = document.querySelector('.accountmenu');
+  const accountCheckbox = document.querySelector('#menu-toggle-account');
+  const burgerMenu = document.querySelector('.burgermenu');
+  const burgerCheckbox = document.querySelector('#menu-toggle-burger');
+
+  document.addEventListener('click', event => {
+    // Close account menu if user clicks outside of it
+    if (!accountMenu.contains(event.target)) {
+      accountCheckbox.checked = false;
+    }
+
+    // Close burger menu if user clicks outside of it
+    if (!burgerMenu.contains(event.target)) {
+      burgerCheckbox.checked = false;
+    }
+  });
+</script>
 
 <!-- 헤더 내비게이션 메뉴-->
 <div class="HeadernavmenuItem NavFont">
-    {% include 'headernavmenu.html' %}
+    {% include 'menues/header_logouted_nav.html' %}
 </div>
 
 
