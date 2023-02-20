@@ -5,24 +5,28 @@
 {% include 'head.html' %}
 
 <body>
-    <div class="Headergirdcontainer white_background">
+    <header>
         {% include 'header.html' %}
-    </div>
-    <hr>
-    <div class="advertisementcontainer">
+    </header>
+
+
+    <main>
+    <div>
         {% include 'advertisementapp/advertisementbanner.html' %}
     </div>
-    <div  class="gray_background Contentgirdcontainer" >
-        <div class="white_background Contentbackground">
+    <div  class="Contentgirdcontainer" >
+        <div class="Contentbackground">
         </div>
-        <div class="white_background Contentcontainer">
+        <div class="Contentcontainer">
             {% block content %}
             {% endblock %}
         </div>
     </div>
+    </main>
     <hr>
-    <div class="Footergirdcontainer black_background">
+    <footer>
         {% include 'footer.html' %}
-    </div>
+    </footer>
+</body>
 </html>
 

@@ -15,34 +15,62 @@
     flex-direction: row
     align-items: flex-start;
 }
-.FooterLogoItem{
+.FooterLogoItem_Web{
+    zoom: 0.8;
     margin-right:2rem;
     position: relative;
-    bottom:10px;
+    bottom:25px;
 }
-
-.FooterLogo{
-    font-size: 2.2rem;
-    font-weight:900;
-}
-
-.FooterSubLogo{
-    display: inline-block;
-    padding: 0;
-    border-radius: 1px;
-    font-size: 0.7rem;
-    position: relative;
-    bottom:7px;
+.FooterLogoItem_App{
+    display:none;
 }
 .FooterLogoDetail{
     font-size: 0.75rem;
-    color: white;
-    font-weight:900;
 }
 
-.limenu {
-    color: white;
-    display: block;
+.FooterNavAStyle{
     margin-left:1.5rem
 }
 
+
+@media (max-width: 1000px) {
+    .Footernavmenu{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .FooterBanner{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .FooterLogoItem_Web{
+        display:none;
+    }
+    .FooterLogoItem_App{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        zoom:0.8;
+        position: relative;
+        bottom:25px;
+    }
+    .FooterLogoDetail{
+        font-size: 0.7rem;
+    }
+    .FooterNavAStyle{
+        margin-left:0;
+        margin-bottom:1rem;
+    }
+
+}
